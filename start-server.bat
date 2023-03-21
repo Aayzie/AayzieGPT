@@ -1,0 +1,3 @@
+@echo off
+echo Starting server...
+start cmd /k "npm start server"
