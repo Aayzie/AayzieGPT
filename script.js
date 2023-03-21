@@ -55,7 +55,7 @@ function undoLastMessage() {
 }
 
 function getMessageHistory() {
-  return messages.map((message) => message.text).join("\n");
+  return messages.map((message) => message.text).join("\n|\n");
 }
 
 async function getResponseFromScaleAI(text) {
