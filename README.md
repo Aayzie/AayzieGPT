@@ -1,5 +1,5 @@
 # AayzieGPT
-scuffed LLM front-end that uses scale's API
+scuffed LLM front-end that uses scale's spellbook API
 
 ## Notes
 
@@ -7,36 +7,38 @@ This is unfinished. Will update this more soon (maybe), but right now it should 
 
 ## How to use
 
-1) Install Node.js: https://nodejs.org/
+1) Make sure you have a Spellbook on Scale. If you don't have one yet, create one here: https://spellbook.scale.com/
 
-2) Clone the repository:
+2) Install Node.js: https://nodejs.org/
+
+3) Clone the repository:
 ```
 git clone https://github.com/Aayzie/AayzieGPT.git
 ```
 
-3) Navigate to the project directory:
+4) Navigate to the project directory:
 ```
 cd AayzieGPT
 ```
 
-4) Install the required dependencies using the following command:
+5) Install the required dependencies using the following command:
 ```
 npm install
 ```
 
-5) Create a new file named **.env** in the root of the project directory. Add the following environment variables and set their values according to your Scale.AI API credentials:
+6) Create a new file named **.env** in the root of the project directory. Add the following environment variables and set their values according to your Scale.AI API credentials:
 ```
 SCALE_API_URL=your_scale_api_url
 SCALE_API_AUTHORIZATION=your_scale_api_authorization
 ```
 Replace **your_scale_api_url** and **your_scale_api_authorization** with the appropriate values.
 
-6) Start the server by running the following command:
+7) Start the server by running the following command:
 ```
 npm start
 ```
 
-7) Open your web browser and navigate to **http://localhost:3000** (or the port number you specified in your server configuration). You should see the application interface, and you can start using it.
+8) Open your web browser and navigate to **http://localhost:3000** (or the port number you specified in your server configuration). You should see the application interface, and you can start using it.
 
 ## Preview
 
