@@ -35,7 +35,7 @@ Replace **your_scale_api_url** and **your_scale_api_authorization** with the app
 
 7) Start the server by running the following command:
 ```
-npm start
+npm start server
 ```
 
 8) Run **index.html**
