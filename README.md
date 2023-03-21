@@ -19,7 +19,7 @@ git clone https://github.com/Aayzie/AayzieGPT.git
 4) Create a new file named **.env** in the root of the project directory. Add the following environment variables and set their values according to your Scale.AI API credentials:
 ```
 SCALE_API_URL=your_scale_api_url
-SCALE_API_AUTHORIZATION=your_scale_api_authorization
+SCALE_API_AUTHORIZATION=Basic your_scale_api_authorization
 ```
 Replace **your_scale_api_url** and **your_scale_api_authorization** with the appropriate values.
 
