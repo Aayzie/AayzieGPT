@@ -45,9 +45,9 @@ Your project folder should look like this:
 
 ![image](https://user-images.githubusercontent.com/16715946/226726922-60433839-aceb-47fb-8f41-9f873dd6a6f1.png)
 
-4) Run **setup-server.bat**
+4) Run **setup-server.bat**. You only need to do this once.
 
-5) Run **start-server.bat**
+5) Run **start-server.bat**. You need to do this every time.
 
 6) Open **index.html**
 
