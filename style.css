@@ -1,0 +1,154 @@
+:root {
+  --color-bg: #333;
+  --color-text: #f0f0f0;
+  --color-text-user: #b8b8b8;
+  --color-text-response: #e2e2e2;
+  --color-primary: #646464;
+  --color-primary-user: #535353;
+  --color-primary-response: #9b9b9b;
+  --color-secondary: #994949;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app-container {
+  height: 100%;
+  margin: 0;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#chat-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%; /* Changed from: max-height: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-bg);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#messages-container {
+  margin: 0 auto;
+  height: calc(100% - 160px);
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.user {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary-user);
+  color: var(--color-text-user);
+  align-self: flex-end;
+}
+
+.response {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary-response);
+  color: var(--color-text-response);
+  align-self: flex-start;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+}
+
+#input-field {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  resize: vertical;
+  overflow-y: auto;
+  min-height: 80px;
+  max-height: 160px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+#input-field::placeholder {
+  color: var(--color-text);
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#button-container button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+#send-button:hover {
+  background-color: rgba(77, 77, 77, 0.9);
+}
+
+#undo-button {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+#undo-button:hover {
+  background-color: rgba(107, 58, 58, 0.9);
+}
+
+#loading-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading-indicator {
+  margin: 2.5px;
+  color: rgb(133, 133, 133);
+  font-size: 13px;
+}
