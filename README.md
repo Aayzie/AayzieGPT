@@ -38,7 +38,7 @@ Replace **your_scale_api_url** and **your_scale_api_authorization** with the app
 npm start
 ```
 
-8) Open your web browser and navigate to **http://localhost:3000** (or the port number you specified in your server configuration). You should see the application interface, and you can start using it.
+8) Run **index.html**
 
 ## Preview
 
