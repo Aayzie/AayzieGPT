@@ -16,29 +16,24 @@ This is unfinished. Will update this more soon (maybe), but right now it should 
 git clone https://github.com/Aayzie/AayzieGPT.git
 ```
 
-4) Navigate to the project directory:
-```
-cd AayzieGPT
-```
-
-5) Install the required dependencies using the following command:
-```
-npm install
-```
-
-6) Create a new file named **.env** in the root of the project directory. Add the following environment variables and set their values according to your Scale.AI API credentials:
+4) Create a new file named **.env** in the root of the project directory. Add the following environment variables and set their values according to your Scale.AI API credentials:
 ```
 SCALE_API_URL=your_scale_api_url
 SCALE_API_AUTHORIZATION=your_scale_api_authorization
 ```
 Replace **your_scale_api_url** and **your_scale_api_authorization** with the appropriate values.
 
-7) Start the server by running the following command:
-```
-npm start server
-```
+5) Run **setup-server.bat**
 
-8) Run **index.html**
+6) Run **start-server.bat**
+
+7) Open **index.html**
+
+## Scale Spellbook Setup
+
+I recommend setting up your Prompt like this:
+
+![Prompt](https://user-images.githubusercontent.com/16715946/226550010-4933f280-3b7a-44c1-a351-a1bbfbbe545c.jpg)
 
 ## Preview
 
