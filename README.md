@@ -13,9 +13,9 @@ This is unfinished. Will update this more soon (maybe), but right now it should 
 
 2) Then, click **Create a New App**. Write whatever Name and Description you want.
 
-3) Pick **GPT-4** as your **model**. Then, set the **Maximum Tokens** to somewhere like **7200**. Don't max it out or you will get errors. Then, erase everything in the **User** block and add one single **{{text}}**. Your prompt should look like this:
+3) Pick **GPT-4** as your **model**. Then, set the **Maximum Tokens** to somewhere like **7200**. **Don't max out** the **Maximum Tokens** or you will get errors. I recommend having **1.0** as the **temperature**.  Then, erase everything in the **User** block and add one single **{{text}}**. Your prompt should look like this:
 
-![Prompt](https://user-images.githubusercontent.com/16715946/226550010-4933f280-3b7a-44c1-a351-a1bbfbbe545c.jpg)
+![image](https://user-images.githubusercontent.com/16715946/226881497-ff1d8cc3-9b62-42b2-a22e-490e42a5455f.png)
 
 4) Click **Save New Variant**.
 
