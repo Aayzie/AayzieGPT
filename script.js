@@ -72,8 +72,16 @@ async function getResponseFromScaleAI(text) {
   try {
     const response = await fetch(apiUrl, options);
     const data = await response.json();
-    if (data && data.output) {
-      return data.output.trim();
+    console.log(data);
+    if (data) {
+      if (data.message)
+      {
+        return data.message.trim();
+      }
+      else if (data.output)
+      {
+        return data.output.trim();
+      }
     } else {
       throw new Error("Invalid response from Scale API");
     }
