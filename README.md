@@ -9,7 +9,7 @@ This is unfinished. Will update this more soon (maybe), but right now it should 
 
 ### Setting up Scale
 
-1) If you don't have one yet, create a Scale account here: https://spellbook.scale.com/. This is where you'll get the GPT-4 API keys.
+1) If you don't have one yet, create a Scale account here: https://spellbook.scale.com/. This is where you'll get OpenAI's GPT-4 API keys (for free, at the time of writing).
 
 2) Then, click **Create a New App**. Write whatever Name and Description you want.
 
