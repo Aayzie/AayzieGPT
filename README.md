@@ -7,33 +7,49 @@ This is unfinished. Will update this more soon (maybe), but right now it should 
 
 ## How to use
 
-1) Make sure you have a Spellbook on Scale. If you don't have one yet, create one here: https://spellbook.scale.com/
+### Setting up Scale
 
-2) Install Node.js: https://nodejs.org/
+1) If you don't have one yet, create a Scale account here: https://spellbook.scale.com/. This is where you'll get OpenAI's GPT-4 API keys (for free, at the time of writing).
 
-3) Clone the repository:
+2) Then, click **Create a New App**. Write whatever Name and Description you want.
+
+3) Pick **GPT-4** as your **model**. Then, set the **Maximum Tokens** to somewhere like **7200**. **Don't max out** the **Maximum Tokens** or you will get errors. I recommend having **1.0** as the **temperature**.  Then, erase everything in the **User** block and add one single **{{text}}**. Your prompt should look like this:
+
+![image](https://user-images.githubusercontent.com/16715946/226881497-ff1d8cc3-9b62-42b2-a22e-490e42a5455f.png)
+
+4) Click **Save New Variant**.
+
+5) Click **Deploy**.
+
+6) You now have your Scale.AI API credentials, which are: **URL** and **API Key**. We will use these two in the next part.
+
+![image](https://user-images.githubusercontent.com/16715946/226726704-448067be-5b1e-4157-a2a5-55ff1211ed45.png)
+
+### Setting up the front-end
+
+1) Install Node.js: https://nodejs.org/
+
+2) Clone the repository, or download the repo as Zip and paste the folder somewhere:
 ```
 git clone https://github.com/Aayzie/AayzieGPT.git
 ```
 
-4) Create a new file named **.env** in the root of the project directory. Add the following environment variables and set their values according to your Scale.AI API credentials:
+3) Create a new file named **.env** in the root of the folder. Add the following and set their values according to your Scale.AI API credentials:
 ```
 SCALE_API_URL=your_scale_api_url
-SCALE_API_AUTHORIZATION=your_scale_api_authorization
+SCALE_API_AUTHORIZATION=Basic your_scale_api_key
 ```
-Replace **your_scale_api_url** and **your_scale_api_authorization** with the appropriate values.
+Replace **your_scale_api_url** and **your_scale_api_key** with the appropriate values. Also, make sure to add **Basic** before your Scale API Key.
 
-5) Run **setup-server.bat**
+Your project folder should look like this:
 
-6) Run **start-server.bat**
+![image](https://user-images.githubusercontent.com/16715946/226726922-60433839-aceb-47fb-8f41-9f873dd6a6f1.png)
 
-7) Open **index.html**
+4) Run **setup-server.bat**. You only need to do this once.
 
-## Scale Spellbook Setup
+5) Run **start-server.bat**. You need to do this every time.
 
-I recommend setting up your Prompt like this:
-
-![Prompt](https://user-images.githubusercontent.com/16715946/226550010-4933f280-3b7a-44c1-a351-a1bbfbbe545c.jpg)
+6) Open **index.html**
 
 ## Preview
 
